@@ -129,3 +129,4 @@ while seguir:
             valorLetra = i * contador
             codigoFinal.append(valorLetra)
         print(codigoFinal)
+print("Programa finalizado")
