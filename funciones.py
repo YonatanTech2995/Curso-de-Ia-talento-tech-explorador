@@ -28,4 +28,22 @@ def suma(a, b, c = 5): # tambien aplica para agumentos predeterminados ejm_ c = 
 def variosParametros(*numeros_letras): # se agrega un * al inicio del parametro
     print(numeros_letras)
 
-variosParametros("hola","mundo", 9, " de agosto") 
+def sumar(*numeros):
+    return sum(numeros)
+#Funciones lamba
+sumar_lambda = lambda a, b: a + b
+multiplicar_lambda = lambda a, b: a * b
+
+#función map
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+doblados = list(map(lambda x: x * 2, numeros))  # Multiplica cada elemento de la lista por 2
+print(doblados)
+
+#función filter
+pares = list(filter(lambda x: x % 2 == 0, numeros))# Filtra los números pares de la lista
+print(pares)
+
+#función sorted
+nombres = ["Juan", "Ana", "Pedro", "Maria", "jorge", "luis", "carlos", "maria", "laura", "jose", "carmen"]
+nombres_ordenados = sorted(nombres, key=lambda x: len(x))  # Ordena los nombres sin importar mayúsculas o minúsculas
+print(nombres_ordenados)
